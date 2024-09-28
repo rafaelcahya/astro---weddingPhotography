@@ -1,0 +1,79 @@
+@font-face {
+    font-family: outfit-thin;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273599/Outfit-Thin_pmrjsm.ttf");
+    font-display: swap;
+}
+
+.outfit-thin {
+    font-family: outfit-thin;
+}
+
+@font-face {
+    font-family: outfit-extralight;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273599/Outfit-ExtraLight_czkpbt.ttf");
+    font-display: swap;
+}
+
+.outfit-extralight {
+    font-family: outfit-extralight;
+}
+
+@font-face {
+    font-family: outfit-light;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273598/Outfit-Light_xhuys0.ttf");
+    font-display: swap;
+}
+
+.outfit-light {
+    font-family: outfit-light;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273598/Outfit-Regular_upwin3.ttf");
+    font-display: swap;
+}
+
+.outfit {
+    font-family: outfit;
+}
+
+@font-face {
+    font-family: outfit-medium;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273598/Outfit-Medium_m4fd66.ttf");
+    font-display: swap;
+}
+
+.outfit-medium {
+    font-family: outfit-medium;
+}
+
+@font-face {
+    font-family: outfit-semibold;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273598/Outfit-SemiBold_hmnxzb.ttf");
+    font-display: swap;
+}
+
+.outfit-semibold {
+    font-family: outfit-semibold;
+}
+
+@font-face {
+    font-family: outfit-bold;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273598/Outfit-Bold_ej2ts6.ttf");
+    font-display: swap;
+}
+
+.outfit-bold {
+    font-family: outfit-bold;
+}
+
+@font-face {
+    font-family: outfit-extrabold;
+    src: url("https://res.cloudinary.com/djvyifjgz/raw/upload/v1727273599/Outfit-ExtraBold_itxyna.ttf");
+    font-display: swap;
+}
+
+.outfit-extrabold {
+    font-family: outfit-extrabold;
+}

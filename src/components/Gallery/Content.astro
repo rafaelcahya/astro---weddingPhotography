@@ -1,0 +1,95 @@
+---
+const contents = [
+	{
+		locationName: "Whispering Pines, Oregon",
+		coupleName: "Emily & Jack's Rustic Charm",
+		date: "June 12, 2023",
+		description: "Nestled in the heart of Oregon’s forests, Whispering Pines offers a serene backdrop with towering pines and rustic charm, perfect for intimate, nature-inspired weddings.",
+		images: [
+			{ src: '../../../assets/1.jpg', alt: 'Image 1' },
+			{ src: '../../../assets/2.jpg', alt: 'Image 2' },
+			{ src: '../../../assets/3.jpg', alt: 'Image 3' },
+			{ src: '../../../assets/4.jpg', alt: 'Image 4' },
+			{ src: '../../../assets/5.jpg', alt: 'Image 5' }
+		]
+	},
+	{
+		locationName: "Meadowbrook Gardens, Vermont",
+		coupleName: "Sarah & Tom's Vintage Elegance",
+		date: "uly 18, 2023",
+		description: "A picturesque garden setting in Vermont, Meadowbrook Gardens is ideal for couples seeking timeless beauty, lush greenery, and elegant outdoor ceremonies.",
+		images: [
+			{ src: '../../../assets/1.jpg', alt: 'Image 1' },
+			{ src: '../../../assets/2.jpg', alt: 'Image 2' },
+			{ src: '../../../assets/3.jpg', alt: 'Image 3' },
+			{ src: '../../../assets/4.jpg', alt: 'Image 4' },
+			{ src: '../../../assets/5.jpg', alt: 'Image 5' }
+		]
+	},
+	{
+		locationName: "Blue Horizon Cove, California",
+		coupleName: "Mia & David's Seaside Romance",
+		date: "August 5, 2023",
+		description: "With stunning ocean views and soft coastal breezes, Blue Horizon Cove in California is the ultimate romantic setting for seaside weddings, capturing the magic of sunset vows.",
+		images: [
+			{ src: '../../../assets/1.jpg', alt: 'Image 1' },
+			{ src: '../../../assets/2.jpg', alt: 'Image 2' },
+			{ src: '../../../assets/3.jpg', alt: 'Image 3' },
+			{ src: '../../../assets/4.jpg', alt: 'Image 4' },
+			{ src: '../../../assets/5.jpg', alt: 'Image 5' }
+		]
+	}
+];
+---
+<style>
+	/* width */
+	::-webkit-scrollbar {
+	  width: 20px;
+	}
+	
+	/* Track */
+	::-webkit-scrollbar-track {
+	  box-shadow: inset 0 0 5px grey; 
+	  border-radius: 10px;
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: red; 
+	  border-radius: 10px;
+	}
+	
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #b30000; 
+	}
+	</style>
+
+<section>
+	<div class="flex flex-col gap-32 px-5 md:px-14 mt-32">
+		<div class="flex flex-col items-center gap-5 text-center">
+			<div>
+				<h1 class="outfit-semibold text-white text-[32px]">Capture the Moments of Love</h1>
+				<p class="outfit text-white">Explore Our Collection of Stunning Wedding Venues</p>
+			</div>
+			<p class="outfit text-neutral-500 w-full md:w-3/4 xl:w-1/2">Dive into the magic of each celebration as we showcase the breathtaking locations where love stories unfold. From rustic charm to elegant gardens, discover how we transform beautiful settings into unforgettable memories through our lens.</p>
+		</div>
+		<div class="flex flex-col gap-20">
+			{contents.map((content, i) => (
+				<div id={i.toString()} class="flex flex-col lg:flex-row justify-between items-end gap-5 w-full">
+					<div class="flex flex-col items-start gap-2 outfit w-full lg:w-2/5 xl:w-3/5">
+						<p class="text-white text-[20px]">{content.locationName}</p>
+						<p class="text-neutral-500">{content.coupleName}</p>
+						<p class="text-neutral-500">{content.date}</p>
+						<p class="text-white w-full md:w-2/3">{content.description}</p>
+					</div>
+					<div class="flex gap-5 overflow-auto whitespace-nowrap pb-3 w-full lg:w-3/5 xl:w-2/5">
+						{content.images.map((image, index) => (
+							<img id={index.toString()} src={image.src} alt={image.alt} class="w-full md:w-[450px] xl:w-[600px] h-[150px] md:h-[250px] xl:h-[325px] rounded-xl"/>
+						))}
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

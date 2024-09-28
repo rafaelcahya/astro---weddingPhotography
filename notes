@@ -1,0 +1,37 @@
+---
+---
+
+<section class="relative m-4 mb-32 rounded-2xl">
+	<div class="relative flex flex-col-reverse md:flex-col gap-5 w-full h-full text-white">
+		<img src="../../../assets/thumbnailHeader.png" alt="" srcset="" class="w-full">
+		<div class="pt-20 md:py-20 md:bg-black/25">
+			<h1 class="text-[20px] text-center outfit-medium w-full">Capturing Your Love Story, One Moment at a Time</h1>
+			<span class="flex justify-center items-center gap-2">
+				<span class="hidden">
+					<svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#fff"><path d="M6 12H18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+				</span>
+				<p class="outfit text-neutral-500">Forever in Pictures</p>
+			</span>
+		</div>
+	</div>
+	<div class="hidden flex flex-col gap-5 px-5 w-full">
+		<div class="flex flex-col gap-3 w-full text-white bg-white/15 p-5 border border-white/25 backdrop-blur-3xl rounded-xl">
+			<p class="outfit-semibold">Authenticity</p>
+			<p class="outfit">We capture genuine, unfiltered moments that tell the true story of your love. Every emotion, every glance—preserved just as it happened</p>
+		</div>
+		<div class="flex flex-col gap-3 w-full text-white bg-white/15 p-5 border border-white/25 backdrop-blur-3xl rounded-xl">
+			<p class="outfit-semibold">Timeless Quality</p>
+			<p class="outfit">Our photos are crafted with elegance and attention to detail, ensuring that your wedding memories remain vivid and beautiful for a lifetime.</p>
+		</div>
+		<div class="flex flex-col gap-3 w-full text-white bg-white/15 p-5 border border-white/25 backdrop-blur-3xl rounded-xl">
+			<p class="outfit-semibold">Personalized Experience</p>
+			<p class="outfit">We tailor our services to match your unique vision, ensuring that every moment reflects your style and the essence of your special day.</p>
+		</div>
+	</div>
+</section>
+
+<style>
+	img{
+		object-fit: cover;
+	}
+</style>

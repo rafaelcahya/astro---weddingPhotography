@@ -1,0 +1,28 @@
+---
+const awards = [
+  { title: 'Wedding Photography of the Year', awardName: 'Love & Light Photography Awards 2018' },
+  { title: 'Best Wedding Photography', awardName: 'International Wedding Photographers Awards 2023' },
+  { title: 'Best Candid Photography', awardName: 'Global Wedding Photography Awards 2019' },
+  { title: 'Excellence in Destination Weddings', awardName: 'Dream Wedding Awards 2021' },
+  { title: 'Top 10 Wedding Photographers', awardName: 'Elegant Moments Magazine 2022' },
+  { title: 'Outstanding Wedding Album Design', awardName: 'Creative Lens Awards 2020' },
+];
+---
+
+<section class="flex flex-col justify-center gap-10 xl:gap-20 outfit px-4">
+	<div class="text-center">
+		<p class="text-[40px] text-white">Our Awards</p>
+		<p class="text-base md:text-[20px] text-neutral-500">Celebrating Excellence in Wedding Photography</p>
+	</div>
+	<div class="flex flex-wrap justify-center items-center text-center gap-10 xl:gap-20">
+		{
+			awards.map((award, i) => (
+				<div id={i.toString()} class="flex flex-col gap-2 w-[350px]">
+					<p class="text-neutral-500">{award.title}</p>
+					<p class="text-base md:text-[20px] text-white">{award.awardName
+						}</p>
+				</div>
+			))
+		}
+	</div>
+</section>

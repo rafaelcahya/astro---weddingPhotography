@@ -1,0 +1,34 @@
+---
+---
+
+<nav class="fixed top-5 w-full flex justify-between items-center z-10 px-5 md:px-14">
+	<p class="outfit text-[20px] uppercase text-white relative">Lumière</p>
+	<div class="group flex flex-col items-end gap-3 relative">
+		<div class="block md:hidden bg-white/20 backdrop-blur-xl p-2.5 rounded-full rotate-180 w-max">
+			<svg width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5H11" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H16" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+		</div>
+		<div class="absolute md:relative top-14 md:top-0 hidden md:flex group-hover:flex flex-col md:flex-row items-end space-y-2 md:space-y-0 md:space-x-10 pl-10 pr-3 md:px-10 py-3 outfit text-white whitespace-nowrap bg-white/15 backdrop-blur-3xl rounded-2xl">
+			<a href="/">Home</a>
+			<a href="/gallery/">Gallery</a>
+			<a href="/contactUs/">Contact Us</a>
+			<a href="/services/">Services</a>
+		</div>
+	</div>
+	<a href="/contactUs/" class="hidden md:block bg-white p-3 rounded-full hover:rotate-12 duration-200">
+		<svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M22.1525 3.55321L11.1772 21.0044L9.50686 12.4078L2.00002 7.89795L22.1525 3.55321Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.45557 12.4436L22.1524 3.55321" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	</a>
+</nav>
+
+<style>
+		@keyframes slideInFromRight {
+			0% {
+				transform: translateX(100%);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+		.animate-slideInFromRight {
+			animation: slideInFromRight 0.5s ease-in-out;
+		}
+</style>

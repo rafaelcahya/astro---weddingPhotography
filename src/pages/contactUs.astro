@@ -1,0 +1,20 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Content from '../components/Contact Us/Content.astro'
+import Layout from '../layouts/Gallery.astro';
+
+import '../style/font.css'
+import '../style/global.css';
+import Footer from '../components/Footer.astro';
+import Awards from '../components/Awards.astro';
+
+---
+
+<Layout title="Welcome to Lumière.">
+	<Navbar/>
+	<div class="flex flex-col gap-32">
+		<Content/>
+		<Awards/>
+		<Footer/>
+	</div>
+</Layout>
