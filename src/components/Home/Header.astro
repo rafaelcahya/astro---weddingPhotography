@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import thumbnailHeader from '../../../assets/thumbnailHeader.png'
 ---
+
 
 <section class="relative flex lg:block flex-col gap-10 m-4 mb-0 lg:mb-32 rounded-2xl">
 	<div class="relative flex flex-col-reverse w-full text-white mt-32">
-		<img src="../../../assets/thumbnailHeader.png" alt="" srcset="" class="block w-full h-auto">
+		<Image src={thumbnailHeader} alt="" class="block w-full h-auto"/>
 		<div class="relative md:absolute md:inset-0 md:bg-black/25 w-full h-full rounded-2xl">
 			<div class="static md:absolute top-1/2 -translate-y-1/2 px-0 md:px-10">
 				<h1 class="text-[20px] md:text-[32px] lg:text-[48px] xl:text-[64px] outfit-medium text-center md:text-left w-full md:w-3/4">Capturing Your Love Story, One Moment at a Time</h1>

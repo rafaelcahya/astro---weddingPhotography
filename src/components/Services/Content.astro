@@ -1,32 +1,40 @@
 ---
+import { Image } from 'astro:assets';
+import image8 from '../../../assets/8.jpg'
+import image6 from '../../../assets/6.jpg'
+import image4 from '../../../assets/4.jpg'
+import image9 from '../../../assets/9.jpg'
+import image10 from '../../../assets/10.jpg'
+import image11 from '../../../assets/11.jpg'
+
 const Services = [
     {
-      src: "../../../assets/8.jpg",
+      src: image8,
       title: "Full-Day Wedding Coverage",
       description: "From the excitement of getting ready to the last dance of the evening, our full-day wedding coverage ensures that no moment is missed. We capture every detail, emotion, and celebration, allowing you to relive your day through stunning photographs."
     },
     {
-      src: "../../../assets/6.jpg",
+      src: image6,
       title: "Engagement Sessions",
       description: "Celebrate your love before the big day with an engagement session! We’ll work with you to create beautiful, personalized images that reflect your unique story and connection. Use these images for save-the-dates, invitations, or simply to commemorate this exciting chapter in your lives."
     },
     {
-      src: "../../../assets/4.jpg",
+      src: image4,
       title: "Destination Weddings",
       description: "Planning a wedding in a breathtaking location? Our team specializes in destination weddings, traveling to capture your love story in stunning settings. We understand the intricacies of destination photography, ensuring that you receive beautiful images that reflect the essence of your chosen locale."
     },
     {
-      src: "../../../assets/9.jpg",
+      src: image9,
       title: "Custom Wedding Albums",
       description: "Preserve your memories with our custom wedding albums, designed to showcase your favorite moments in a timeless, elegant format. Our albums are crafted with high-quality materials, ensuring your memories are beautifully displayed for years to come."
     },
     {
-      src: "../../../assets/10.jpg",
+      src: image10,
       title: "Professional Editing",
       description: "Our commitment to excellence extends beyond the camera. Each image is professionally edited to enhance colors, lighting, and details, resulting in a polished and cohesive collection that tells your story beautifully."
     },
     {
-      src: "../../../assets/11.jpg",
+      src: image11,
       title: "Consultation and Planning",
       description: "We believe in building strong relationships with our couples. Our consultation services include pre-wedding meetings to discuss your vision, timelines, and any special requests. We’ll work closely with you to ensure every detail is captured just as you imagined."
     }
@@ -42,7 +50,7 @@ const Services = [
             <p class="text-white text-[24px] lg:text-[48px]">{service.title}</p>
             <p class="text-neutral-500 w-full lg:w-3/4">{service.description}</p>
           </div>
-          <img src={service.src} alt="" class={`w-full lg:w-[450px] xl:w-[600px] ${i % 2 === 0 ? 'rounded-none lg:rounded-l-3xl' : 'rounded-none lg:rounded-r-3xl'}`}>
+          <Image id={i.toString()} src={service.src} alt="" class={`w-full lg:w-[450px] xl:w-[600px] ${i % 2 === 0 ? 'rounded-none lg:rounded-l-3xl' : 'rounded-none lg:rounded-r-3xl'}`}/>
         </div>
 			))
 		}

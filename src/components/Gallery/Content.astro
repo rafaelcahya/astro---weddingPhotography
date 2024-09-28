@@ -1,4 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import image1 from '../../../assets/1.jpg'
+import image2 from '../../../assets/2.jpg'
+import image3 from '../../../assets/3.jpg'
+import image4 from '../../../assets/4.jpg'
+import image5 from '../../../assets/5.jpg'
+
 const contents = [
 	{
 		locationName: "Whispering Pines, Oregon",
@@ -6,24 +13,24 @@ const contents = [
 		date: "June 12, 2023",
 		description: "Nestled in the heart of Oregon’s forests, Whispering Pines offers a serene backdrop with towering pines and rustic charm, perfect for intimate, nature-inspired weddings.",
 		images: [
-			{ src: '../../../assets/1.jpg', alt: 'Image 1' },
-			{ src: '../../../assets/2.jpg', alt: 'Image 2' },
-			{ src: '../../../assets/3.jpg', alt: 'Image 3' },
-			{ src: '../../../assets/4.jpg', alt: 'Image 4' },
-			{ src: '../../../assets/5.jpg', alt: 'Image 5' }
+			{ src: image1, alt: 'Image 1' },
+			{ src: image2, alt: 'Image 2' },
+			{ src: image3, alt: 'Image 3' },
+			{ src: image4, alt: 'Image 4' },
+			{ src: image5, alt: 'Image 5' }
 		]
 	},
 	{
 		locationName: "Meadowbrook Gardens, Vermont",
 		coupleName: "Sarah & Tom's Vintage Elegance",
-		date: "uly 18, 2023",
+		date: "July 18, 2023",
 		description: "A picturesque garden setting in Vermont, Meadowbrook Gardens is ideal for couples seeking timeless beauty, lush greenery, and elegant outdoor ceremonies.",
 		images: [
-			{ src: '../../../assets/1.jpg', alt: 'Image 1' },
-			{ src: '../../../assets/2.jpg', alt: 'Image 2' },
-			{ src: '../../../assets/3.jpg', alt: 'Image 3' },
-			{ src: '../../../assets/4.jpg', alt: 'Image 4' },
-			{ src: '../../../assets/5.jpg', alt: 'Image 5' }
+			{ src: image1, alt: 'Image 1' },
+			{ src: image2, alt: 'Image 2' },
+			{ src: image3, alt: 'Image 3' },
+			{ src: image4, alt: 'Image 4' },
+			{ src: image5, alt: 'Image 5' }
 		]
 	},
 	{
@@ -32,11 +39,11 @@ const contents = [
 		date: "August 5, 2023",
 		description: "With stunning ocean views and soft coastal breezes, Blue Horizon Cove in California is the ultimate romantic setting for seaside weddings, capturing the magic of sunset vows.",
 		images: [
-			{ src: '../../../assets/1.jpg', alt: 'Image 1' },
-			{ src: '../../../assets/2.jpg', alt: 'Image 2' },
-			{ src: '../../../assets/3.jpg', alt: 'Image 3' },
-			{ src: '../../../assets/4.jpg', alt: 'Image 4' },
-			{ src: '../../../assets/5.jpg', alt: 'Image 5' }
+			{ src: image1, alt: 'Image 1' },
+			{ src: image2, alt: 'Image 2' },
+			{ src: image3, alt: 'Image 3' },
+			{ src: image4, alt: 'Image 4' },
+			{ src: image5, alt: 'Image 5' }
 		]
 	}
 ];
@@ -84,8 +91,8 @@ const contents = [
 						<p class="text-white w-full md:w-2/3">{content.description}</p>
 					</div>
 					<div class="flex gap-5 overflow-auto whitespace-nowrap pb-3 w-full lg:w-3/5 xl:w-2/5">
-						{content.images.map((image, index) => (
-							<img id={index.toString()} src={image.src} alt={image.alt} class="w-full md:w-[450px] xl:w-[600px] h-[150px] md:h-[250px] xl:h-[325px] rounded-xl"/>
+						{content.images.map((image, i) => (
+							<Image id={i.toString()} src={image.src} alt={image.alt} class="w-full md:w-[450px] xl:w-[600px] h-[150px] md:h-[250px] xl:h-[325px] rounded-xl"/>
 						))}
 					</div>
 				</div>
